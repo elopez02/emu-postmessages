@@ -1,0 +1,7 @@
+{
+  "name": "anfitrion_emulator",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

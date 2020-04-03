@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <span id="title">TITULO</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content overflow-scroll="true">
+  <div class="ion-padding">
+    <ion-item>
+      <ion-input placeholder="URL a embeber" [(ngModel)]="link"  ></ion-input>
+    </ion-item>
+    <ion-button (click)="onPresentar()" [disabled]="!link">
+      Embeber
+    </ion-button>
+    <h5><span>{{status}}</span></h5>
+    <br />
+    <!-- <h3><span>Post message response:: {{response}}</span></h3> -->
+  </div>
+  <iframe *ngIf="urlSafe" [src]="urlSafe" id="contenedor"></iframe>
+</ion-content>
